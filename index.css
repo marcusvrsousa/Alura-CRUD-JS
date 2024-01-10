@@ -1,0 +1,507 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+p {
+  margin: 0;
+}
+
+.gradiente {
+  background-color: #b976ee;
+  /* Roxo > roxo mais forte
+  background-image: linear-gradient(#b976ee, rgb(90, 34, 180)); 
+  */
+  /* f3dadd */
+}
+
+.nav-principal {
+  height: 50px;
+  margin-bottom: -16px;
+}
+
+.nav-logo {
+  margin-left: 50px;
+  width: 4%;
+  padding: 10px;
+  border-radius: 100px;
+}
+
+.nav-principal .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.itens-navegacao {
+  margin: 20px;
+  font-size: 20px;
+  transition: 1s ease-out;
+}
+
+.link-navegacao {
+  margin-left: 10px;
+  text-decoration: none;
+  /* box-shadow: 2px 2px 10px 5px rgb(90, 34, 180);
+  border-radius: 3px; */
+
+  padding: 3px;
+}
+
+.link-navegacao:hover {
+  border-bottom: 2px solid rgb(90, 34, 180);
+
+  /* rgb(90, 34, 180) */
+}
+
+/* =================botao back to the top=============== */
+
+.btn-fixed {
+  margin-top: 80vh;
+  color: black;
+  position: fixed;
+  //bottom: 30px;
+  right: 30px;
+}
+
+/* =================div da apresentacao=============== */
+
+.apresentacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 0px;
+  height: 100vh;
+}
+
+.nome {
+  font-size: 70px;
+}
+
+.profissao {
+  font-size: 25px;
+  font-style: italic;
+}
+
+.fran-foto {
+  width: 25%;
+  border-radius: 10em;
+}
+
+/* =================div das fotos=============== */
+
+.p-portfolio {
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+  padding: 10px;
+  margin-right: 20px;
+  font-family: "Satisfy";
+  font-size: 50px;
+}
+
+.fotos {
+  height: 100vh;
+  /* background-color: #b976ee; */
+  background-color: #f7d3a6;
+}
+
+.lista-fotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100vh0px;
+}
+
+.fotos .foto-sobrancelha {
+  margin-top: 5%;
+  width: 40vh;
+}
+
+/* =================div dos servicos=============== */
+
+.servicos {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  background-color: #78b4b9;
+  /* background-color: #f0f696; amarelo mais forte*/
+}
+
+.servicos .p-servicos {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  margin-top: 25%;
+  height: 40px;
+  transform: rotate(270deg);
+}
+
+.servico1 {
+  position: relative;
+  margin-top: 10%;
+  margin-right: 10%;
+  height: 50%;
+  width: 40%;
+  background-color: #1b191d;
+  border-radius: 20px;
+}
+
+.servico2 {
+  position: relative;
+  margin-top: 10%;
+  margin-right: 10%;
+  height: 50%;
+  width: 40%;
+  /* background-color: #b976ee; */
+  background-color: #1b191d;
+  border-radius: 20px;
+}
+
+.texto-design,
+.texto-henna {
+  text-align: center;
+  color: aliceblue;
+
+  margin: 10px;
+  height: 14%;
+  padding: 5px;
+  font-style: italic;
+}
+
+.servico1 .texto-design {
+  position: absolute;
+  bottom: 0;
+}
+
+.servico2 .texto-henna {
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+}
+
+.sobrancelha-pinca {
+  width: 95%;
+  height: 75%;
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  border-radius: 20px;
+}
+
+.sobrancelha-henna {
+  width: 95%;
+  height: 75%;
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  border-radius: 20px;
+}
+
+.texto-design {
+}
+
+/* =================div do contato=============== */
+.lista .lista-contato {
+  display: flex;
+  justify-content: space-around;
+}
+.contato {
+  /* background-color: #b976ee; */
+  background-color: #ffc4bb;
+  display: flex;
+  justify-content: space-around;
+  height: 40vh;
+}
+
+.lista-contato {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-start: end;
+  width: 100%;
+  height: 40%;
+  list-style-type: none;
+}
+
+.p-contato {
+  font-size: 50px;
+  font-family: "Satisfy";
+  text-align: center;
+  margin-top: 5vh;
+  // margin: 0 25% 16%;
+}
+
+.wpp {
+  width: 40px;
+
+  border-radius: 15px;
+  margin-bottom: 6%;
+  opacity: 0.7;
+  transition: 1s ease-out;
+}
+
+/* .li-wpp::after {
+  content: "(71)99999-9999";
+} */
+
+.wpp:hover {
+  transform: scale(1.07);
+  height: 41px;
+  width: 41px;
+  transition: 1s ease-in-out;
+  opacity: 1;
+}
+
+.numero-wpp {
+  font-family: "Satisfy";
+  font-size: 20px;
+}
+
+.instagram {
+  width: 40px;
+  border-radius: 10px;
+  margin-bottom: 6%;
+  opacity: 0.7;
+  transition: 1s ease;
+}
+
+.li-instagram {
+  width: fit-content;
+}
+
+/* .li-instagram::after {
+  content: "@donnafran";
+} */
+
+.instagram:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+.nome-instagram {
+  font-family: "Satisfy";
+  font-size: 25px;
+}
+.contato .mapa {
+  height: 100%;
+}
+
+/* ---------- mobile ------------- */
+
+/* ---------- button back to top ------------- */
+@media (min-width: 320px) and (max-width: 425px) {
+  .btn-fixed {
+    margin-top: 30vh;
+    right: 10px;
+  }
+
+  .gradiente {
+    background-color: #ffccc5;
+  }
+
+  .nav-principal {
+    /* display: flex;
+    flex-direction: column; */
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .nav-logo {
+    width: 30%;
+    margin-left: 4px;
+  }
+
+  .container .itens-navegacao {
+    display: flex;
+  }
+
+  .apresentacao {
+    display: flex;
+    flex-direction: column;
+    margin-top: 22vh;
+    margin-left: 1px;
+  }
+
+  .apresentacao .nome {
+    font-size: 40px;
+  }
+
+  .apresentacao .profissao {
+    font-size: 20px;
+  }
+
+  .apresentacao .fran-foto {
+    height: 40vh;
+    margin-bottom: 50px;
+    width: fit-content;
+    border: 1px solid white;
+  }
+
+  /* -------------- portfolio antes e depois -------------- */
+  .fotos {
+    height: fit-content;
+  }
+
+  .lista-fotos {
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: -20px;
+  }
+
+  .lista-fotos .foto-sobrancelha {
+    border-radius: 30px;
+    width: 20vh;
+  }
+
+  /* -------------- serviços -------------- */
+
+  .servicos {
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+  }
+
+  .servicos .serv1 {
+    border: 2px solid;
+  }
+
+  .servicos .p-servicos {
+    margin-top: 20px;
+    transform: rotate(0);
+    font-family: "Satisfy";
+    text-decoration: overline;
+  }
+
+  .lista-servicos {
+    list-style: none;
+    margin-right: 25px;
+  }
+
+  .lista-servicos .sobrancelha-pinca {
+    height: 170.75px;
+    border: 1px solid;
+    box-shadow: 3px 3px black;
+    margin-left: ;
+  }
+
+  /* .lista-servicos .sobrancelha-henna:hover {
+    filter: blur(1px);
+    transition: all 0.6s ease;
+    opacity: 1;
+  } */
+
+  /* -------------- contato e mapa -------------- */
+
+  .contato {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .lista {
+  }
+
+  .lista .lista-contato {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: auto;
+    padding: 0;
+    margin: 10px;
+  }
+
+  .mapa {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .lista-contato {
+    gap: 0px;
+    margin: 10px;
+  }
+  .numero-wpp {
+    font-size: 15px;
+  }
+  .nome-instagram {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  .nome-profissao {
+    margin-top: 40px;
+  }
+  .servicos .p-servicos {
+    margin-top: 40px;
+    transform: rotate(0);
+    font-family: "Satisfy";
+    text-decoration: overline;
+  }
+
+  .texto-henna,
+  .texto-design {
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .fotos {
+    height: fit-content;
+  }
+
+  .fotos .lista-fotos {
+    gap: 10px;
+    margin-top: -30px;
+  }
+
+  .lista-fotos .foto-sobrancelha {
+    border-radius: 10px;
+    margin-bottom: 25px;
+    width: 30vh;
+  }
+
+  .servicos .lista-servicos {
+    list-style-type: none;
+  }
+
+  .servicos .p-servicos {
+    margin: auto;
+  }
+
+  .lista-servicos li {
+    height: 50%;
+    width: 80%;
+    margin: auto;
+  }
+
+  .lista-servicos .texto-design,
+  .texto-henna {
+    margin: -28px;
+  }
+
+  .contato {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .contato .lista-contato {
+    width: 50%;
+    margin: auto;
+  }
+
+  .contato .mapa {
+    display: flex;
+    height: 300px;
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+  }
+}
+
+/* ---------- div gradient ------------- */
